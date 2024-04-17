@@ -14,8 +14,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = {"com/demo/step_definition"},
-        dryRun = false,
-        tags = "@smoke",
+        dryRun = true,
+        tags = "@index",
         publish = true // generates the report with public link
 
 
