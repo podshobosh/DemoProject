@@ -35,8 +35,16 @@ public class IndexPageStepDefs extends IndexPage {
     }
 
     @Then("the user should be directed to the {string}")
-    public void the_user_should_be_directed_to_the(String string) {
-        Assert.assertEquals("SignIn", Driver.getDriver().getTitle());
+    public void the_user_should_be_directed_to_the(String expectedDestination) {
+        String actualTitle = Driver.getDriver().getTitle();
+        if (expectedDestination.equalsIgnoreCase("Sign in Page")) {
+            Assert.assertEquals("SignIn", actualTitle);
+        } else if (expectedDestination.equalsIgnoreCase("Register Page")) {
+            Assert.assertEquals("Register Page", actualTitle);
+        } else {
+            Assert.fail("Unexpected destination: " + expectedDestination);
+        }
+    }
 
     }
 
