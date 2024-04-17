@@ -22,5 +22,10 @@ public class IndexPage {
     @FindBy(xpath = "//*[@id='btn2']")
     public WebElement skipSignInBttn;
 
+    public void enterEmailForSignUp(String email){
+        emailInputBox.sendKeys(email);
+        enterBttn.click();
+    }
+
 
 }

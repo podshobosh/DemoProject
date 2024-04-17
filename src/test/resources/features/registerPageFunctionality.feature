@@ -1,5 +1,5 @@
 @smoke
-Feature: User should be able register and create and account
+Feature: Sign up process
   User Story: As a user I want to register and create a new account by providing all the necessary information
 
   Background: user is on the register page
