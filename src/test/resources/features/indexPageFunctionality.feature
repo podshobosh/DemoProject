@@ -1,5 +1,5 @@
 @index
-Feature: Home Page Navigation
+Feature: Index Page Navigation
   User Story: As a user, I want to be able to access website features with either signing in immediately,
   skipping the sign in process or creating an account
   so that I can explore the content and have access to all the functionalities of this website

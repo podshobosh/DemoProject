@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class IndexPageStepDefs extends IndexPage {
+public class IndexPageStepDefs extends IndexPage{
 
     IndexPage indexPage = new IndexPage();
 
@@ -40,7 +40,7 @@ public class IndexPageStepDefs extends IndexPage {
         if (expectedDestination.equalsIgnoreCase("Sign in Page")) {
             Assert.assertEquals("SignIn", actualTitle);
         } else if (expectedDestination.equalsIgnoreCase("Register Page")) {
-            Assert.assertEquals("Register Page", actualTitle);
+            Assert.assertEquals("Register", actualTitle);
         } else {
             Assert.fail("Unexpected destination: " + expectedDestination);
         }
